@@ -40,6 +40,10 @@ namespace practicaTaquillaCine
         {
             Boleto boleto = null;
             decimal precioBase = 80.00m;
+            else if (cmbTipoBoleto.Text == "Adulto Mayor")
+            {
+                boleto = new BoletoAdultoMayor(precioBase, "INAPAM12345");
+            }
 
 
 
