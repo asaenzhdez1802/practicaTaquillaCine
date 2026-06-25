@@ -41,7 +41,10 @@ namespace practicaTaquillaCine
             Boleto boleto = null;
             decimal precioBase = 80.00m;
 
-
+            if (cmbTipoBoleto.Text == "Estudiante")
+            {
+                boleto = new BoletoEstudiante(precioBase, "20251052");
+            }
 
         }
     }
