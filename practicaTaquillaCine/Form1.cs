@@ -45,7 +45,10 @@ namespace practicaTaquillaCine
                 boleto = new BoletoAdultoMayor(precioBase, "INAPAM12345");
             }
 
-
+            if (cmbTipoBoleto.Text == "Estudiante")
+            {
+                boleto = new BoletoEstudiante(precioBase, "20251052");
+            }
 
         }
     }
